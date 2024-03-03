@@ -1,4 +1,4 @@
-package com.example.beersapp.core
+package com.example.beersapp.config
 
 class Config {
     companion object {

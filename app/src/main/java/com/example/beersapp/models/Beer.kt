@@ -1,38 +1,16 @@
 package com.example.beersapp.models
 
-import com.google.gson.annotations.SerializedName
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
-data class Beer (
-    @SerializedName("id")
-    val id: Long,
-
-    @SerializedName("uid")
-    val uid: String,
-
-    @SerializedName("brand")
+@Parcelize
+data class Beer(
     val brand: String,
 
-    @SerializedName("name")
     val name: String,
 
-    @SerializedName("style")
     val style: String,
 
-    @SerializedName("hop")
-    val hop: String,
+    val alcohol: String
+) : Parcelable
 
-    @SerializedName("yeast")
-    val yeast: String,
-
-    @SerializedName("malts")
-    val malts: String,
-
-    @SerializedName("ibu")
-    val ibu: String,
-
-    @SerializedName("alcohol")
-    val alcohol: String,
-
-    @SerializedName("blg")
-    val blg: String
-)
